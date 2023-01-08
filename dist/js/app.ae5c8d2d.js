@@ -915,10 +915,10 @@
       }
   
       var B = [184, 213, 61, 178, 233, 175, 120, 140, 131, 51, 113, 81, 118, 160, 205, 55, 47, 62, 53, 141, 169, 190, 152, 183, 231, 140, 34, 206, 90, 97, 223, 104, 105, 137, 254, 165, 182, 222, 169, 119, 252, 200, 189, 189, 229, 109, 62, 90, 54, 239, 105, 78, 190, 225, 233, 102, 28, 243, 217, 2, 182, 242, 18, 155, 68, 208, 111, 185, 53, 137, 182, 70, 109, 115, 130, 6, 105, 193, 237, 215, 133, 194, 48, 223, 162, 98, 190, 121, 45, 98, 98, 61, 13, 126, 190, 72, 137, 35, 2, 160, 228, 213, 117, 81, 50, 2, 83, 253, 22, 58, 33, 59, 22, 15, 195, 178, 187, 179, 226, 186, 58, 61, 19, 236, 246, 1, 69, 132, 165, 112, 15, 147, 73, 12, 100, 205, 49, 213, 204, 76, 7, 1, 158, 0, 26, 35, 144, 191, 136, 30, 59, 171, 166, 62, 196, 115, 71, 16, 126, 59, 94, 188, 227, 0, 132, 255, 9, 212, 224, 137, 15, 91, 88, 112, 79, 251, 101, 216, 92, 83, 27, 211, 200, 198, 191, 239, 152, 176, 80, 79, 15, 234, 229, 131, 88, 140, 40, 44, 132, 103, 205, 208, 158, 71, 219, 39, 80, 202, 244, 99, 99, 232, 151, 127, 27, 75, 12, 194, 193, 33, 76, 204, 88, 245, 148, 82, 163, 243, 211, 224, 104, 244, 0, 35, 243, 94, 10, 123, 147, 221, 171, 18, 178, 19, 232, 132, 215, 167, 159, 15, 50, 76, 85, 29, 4, 54, 82, 220, 3, 243, 249, 78, 66, 233, 61, 97, 239, 124, 182, 179, 147, 80],
-          C = (r("25f0"), r("843c"), [121, 101, 101, 108, 105, 111, 110, 45, 107, 117, 119, 111, 45, 116, 109, 101]),
-          L = "MoOtOiTvINGwd2E6n0E1i7L5t2IoOoNk";
+          q = (r("25f0"), r("843c"), [121, 101, 101, 108, 105, 111, 110, 45, 107, 117, 119, 111, 45, 116, 109, 101]),
+          C = "MoOtOiTvINGwd2E6n0E1i7L5t2IoOoNk";
   
-      function F(t, e, r) {
+      function L(t, e, r) {
         return Object(n["a"])(this, void 0, Promise, function () {
           var r, i, c, u, l, f, d, h, b, m, p, v, g, w;
           return Object(n["c"])(this, function (n) {
@@ -927,7 +927,7 @@
                 return i = Uint8Array.bind, [4, Object(a["c"])(t)];
   
               case 1:
-                return r = new (i.apply(Uint8Array, [void 0, n.sent()]))(), Object(a["b"])(r, C) ? [3, 4] : "aac" !== Object(a["g"])(r) ? [3, 3] : [4, s(t, e, "aac", !1)];
+                return r = new (i.apply(Uint8Array, [void 0, n.sent()]))(), Object(a["b"])(r, q) ? [3, 4] : "aac" !== Object(a["g"])(r) ? [3, 3] : [4, s(t, e, "aac", !1)];
   
               case 2:
                 return [2, n.sent()];
@@ -936,7 +936,7 @@
                 throw Error("not a valid kwm file");
   
               case 4:
-                for (c = r.slice(24, 32), u = N(c), l = r.slice(1024), f = l.length, d = 0; d < f; ++d) l[d] ^= u[d % 32];
+                for (c = r.slice(24, 32), u = F(c), l = r.slice(1024), f = l.length, d = 0; d < f; ++d) l[d] ^= u[d % 32];
   
                 return h = Object(a["g"])(l), b = a["a"][h], m = new Blob([l], {
                   type: b
@@ -958,13 +958,13 @@
         });
       }
   
-      function N(t) {
-        for (var e = new DataView(t.buffer), r = e.getBigUint64(0, !0).toString(), n = q(r), i = new Uint8Array(32), a = 0; a < 32; a++) i[a] = L.charCodeAt(a) ^ n.charCodeAt(a);
+      function F(t) {
+        for (var e = new DataView(t.buffer), r = e.getBigUint64(0, !0).toString(), n = N(r), i = new Uint8Array(32), a = 0; a < 32; a++) i[a] = C.charCodeAt(a) ^ n.charCodeAt(a);
   
         return i;
       }
   
-      function q(t) {
+      function N(t) {
         var e = t.length,
             r = t;
         return e > 32 ? r = t.slice(0, 32) : e < 32 && (r = t.padEnd(32, t)), r;
@@ -1191,7 +1191,7 @@
                 return o = n.sent(), [3, 26];
   
               case 7:
-                return [4, F(t.raw, r.name, r.ext)];
+                return [4, L(t.raw, r.name, r.ext)];
   
               case 8:
                 return o = n.sent(), [3, 26];
@@ -2058,12 +2058,12 @@
           I = r.n(D),
           R = (r("eca7"), r("3787")),
           B = r.n(R),
-          C = (r("425f"), r("4105")),
-          L = r.n(C),
-          F = (r("a7cc"), r("df33")),
-          N = r.n(F),
-          q = (r("1951"), r("eedf")),
-          z = r.n(q),
+          q = (r("425f"), r("4105")),
+          C = r.n(q),
+          L = (r("a7cc"), r("df33")),
+          F = r.n(L),
+          N = (r("1951"), r("eedf")),
+          z = r.n(N),
           $ = (r("acb6"), r("c673")),
           J = r.n($),
           W = (r("fd71"), r("a447")),
@@ -2083,22 +2083,22 @@
           }
         }, [r("el-row", [r("a", {
           attrs: {
-            href: "https://github.com/ix64/unlock-music",
+            href: "https://github.com/fjqz177/unlock-music",
             target: "_blank"
           }
         }, [t._v("音乐解锁")]), t._v("(" + t._s(t.version) + ") ：移除已购音乐的加密保护。 "), r("a", {
           attrs: {
-            href: "https://github.com/ix64/unlock-music/wiki/使用提示",
+            href: "https://github.com/fjqz177/unlock-music/wiki/使用提示",
             target: "_blank"
           }
-        }, [t._v("使用提示")])]), r("el-row", [t._v(" 目前支持 网易云音乐(ncm), QQ音乐(qmc, mflac, mgg), 酷狗音乐(kgm), 虾米音乐(xm), 酷我音乐(.kwm) "), r("a", {
+        }, [t._v("使用提示")])]), r("el-row", [t._v(" 目前支持 网易云音乐(ncm), QQ音乐(qmc, mflac, mgg), 酷狗音乐(kgm, vpr), 虾米音乐(xm), 酷我音乐(kwm) "), r("a", {
           attrs: {
-            href: "https://github.com/ix64/unlock-music/blob/master/README.md",
+            href: "https://github.com/fjqz177/unlock-music/blob/master/README.md",
             target: "_blank"
           }
         }, [t._v("更多")]), t._v("。 ")]), r("el-row", [r("span", [t._v("Copyright © 2019 - " + t._s(new Date().getFullYear()) + " MengYX")]), t._v(" 音乐解锁使用 "), r("a", {
           attrs: {
-            href: "https://github.com/ix64/unlock-music/blob/master/LICENSE",
+            href: "https://github.com/fjqz177/unlock-music/blob/master/LICENSE",
             target: "_blank"
           }
         }, [t._v("MIT许可协议")]), t._v(" 开放源代码 ")])], 1)], 1);
@@ -2870,7 +2870,7 @@
                       position: "top-left"
                     }) : t.$notify.info({
                       title: "离线使用",
-                      message: "我们使用PWA技术，无网络也能使用<br/>最近更新：".concat(ft.updateInfo, '<br/><a target="_blank" href="https://github.com/ix64/unlock-music/wiki/使用提示">使用提示</a>'),
+                      message: "我们使用PWA技术，无网络也能使用<br/>最近更新：".concat(ft.updateInfo, '<br/><a target="_blank" href="https://github.com/fjqz177/unlock-music/wiki/使用提示">使用提示</a>'),
                       dangerouslyUseHTMLString: !0,
                       duration: 1e4,
                       position: "top-left"
@@ -2887,9 +2887,9 @@
       },
           Rt = It,
           Bt = (r("5c0b"), Object(et["a"])(Rt, H, K, !1, null, null, null)),
-          Ct = Bt.exports,
-          Lt = r("9483");
-      "https:" === window.location.protocol && Object(Lt["a"])("".concat("", "service-worker.js"), {
+          qt = Bt.exports,
+          Ct = r("9483");
+      "https:" === window.location.protocol && Object(Ct["a"])("".concat("", "service-worker.js"), {
         ready: function () {
           console.log("App is being served from cache by a service worker.");
         },
@@ -2911,9 +2911,9 @@
         error: function (t) {
           console.error("Error during service worker registration:", t);
         }
-      }), G["default"].use(V.a), G["default"].use(J.a), G["default"].use(z.a), G["default"].use(N.a), G["default"].use(L.a), G["default"].use(B.a), G["default"].use(I.a), G["default"].use(P.a), G["default"].use(T.a), G["default"].use(E.a), G["default"].use(U.a), G["default"].use(k.a), G["default"].use(O.a), G["default"].use(y.a), G["default"].use(g.a), G["default"].use(p.a), G["default"].use(b.a), G["default"].use(d.a), G["default"].use(l.a), G["default"].use(s.a), G["default"].prototype.$notify = o.a, G["default"].prototype.$confirm = i.a.confirm, G["default"].config.productionTip = !1, new G["default"]({
+      }), G["default"].use(V.a), G["default"].use(J.a), G["default"].use(z.a), G["default"].use(F.a), G["default"].use(C.a), G["default"].use(B.a), G["default"].use(I.a), G["default"].use(P.a), G["default"].use(T.a), G["default"].use(E.a), G["default"].use(U.a), G["default"].use(k.a), G["default"].use(O.a), G["default"].use(y.a), G["default"].use(g.a), G["default"].use(p.a), G["default"].use(b.a), G["default"].use(d.a), G["default"].use(l.a), G["default"].use(s.a), G["default"].prototype.$notify = o.a, G["default"].prototype.$confirm = i.a.confirm, G["default"].config.productionTip = !1, new G["default"]({
         render: function (t) {
-          return t(Ct);
+          return t(qt);
         }
       }).$mount("#app");
     },
