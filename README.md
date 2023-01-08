@@ -1,3 +1,8 @@
+# 此项目为搬运，因为原作者的仓库被封了，我不是作者本人
+# 此项目为搬运，因为原作者的仓库被封了，我不是作者本人
+# 此项目为搬运，因为原作者的仓库被封了，我不是作者本人
+# 原作者[Github@ix64](https://github.com/ix64)
+
 # Unlock Music 音乐解锁
 
 - 在浏览器中解锁加密的音乐文件。 Unlock encrypted music file in the browser.
@@ -20,9 +25,7 @@
 - [x] 网易云音乐格式 (.ncm)
 - [x] 虾米音乐格式 (.xm)
 - [x] 酷我音乐格式 (.kwm)
-- [x] 酷狗音乐格式 (.kgm/.vpr) ([CLI 版本][kgm_cli])
-
-[kgm_cli]: https://github.com/fjqz177/unlock-music/wiki/其他音乐格式工具#酷狗音乐-kgmvpr解锁工具
+- [x] 酷狗音乐格式 (.kgm/.vpr)
 
 ### 其他特性
 
@@ -38,8 +41,6 @@
 ### 安装浏览器扩展
 
 [![Chrome Web Store](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/gldlhhhmienbhlpkfanjpmffdjblmegd)
-[<img src="https://developer.microsoft.com/en-us/store/badges/images/Chinese_Simplified_get-it-from-MS.png" height="60" alt="Microsoft Edge Addons"/>](https://microsoftedge.microsoft.com/addons/detail/ggafoipegcmodfhakdkalpdpcdkiljmd)
-[![Firefox Browser Addons](https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/zh-CN/firefox/addon/unlock-music/)
 
 ### 自行构建
 

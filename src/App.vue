@@ -5,19 +5,19 @@
     </el-main>
     <el-footer id="app-footer">
       <el-row>
-        <a href="https://github.com/ix64/unlock-music" target="_blank">音乐解锁</a>({{ version }})
+        <a href="https://github.com/fjqz177/unlock-music" target="_blank">音乐解锁</a>({{ version }})
         ：移除已购音乐的加密保护。
-        <a href="https://github.com/ix64/unlock-music/wiki/使用提示" target="_blank">使用提示</a>
+        <a href="https://github.com/fjqz177/unlock-music/wiki/使用提示" target="_blank">使用提示</a>
       </el-row>
       <el-row>
-        目前支持 网易云音乐(ncm), QQ音乐(qmc, mflac, mgg), 酷狗音乐(kgm), 虾米音乐(xm), 酷我音乐(.kwm)
-        <a href="https://github.com/ix64/unlock-music/blob/master/README.md" target="_blank">更多</a>。
+        目前支持 网易云音乐(ncm), QQ音乐(qmc, mflac, mgg), 酷狗音乐(kgm, vpr), 虾米音乐(xm), 酷我音乐(kwm)
+        <a href="https://github.com/fjqz177/unlock-music/blob/master/README.md" target="_blank">更多</a>。
       </el-row>
       <el-row>
         <!--如果进行二次开发，此行版权信息不得移除且应明显地标注于页面上-->
         <span>Copyright &copy; 2019 - {{ new Date().getFullYear() }} MengYX</span>
         音乐解锁使用
-        <a href="https://github.com/ix64/unlock-music/blob/master/LICENSE" target="_blank">MIT许可协议</a>
+        <a href="https://github.com/fjqz177/unlock-music/blob/master/LICENSE" target="_blank">MIT许可协议</a>
         开放源代码
       </el-row>
     </el-footer>
@@ -71,7 +71,7 @@ export default {
       } else {
         this.$notify.info({
           title: '离线使用',
-          message: `我们使用PWA技术，无网络也能使用<br/>最近更新：${config.updateInfo}<br/><a target="_blank" href="https://github.com/ix64/unlock-music/wiki/使用提示">使用提示</a>`,
+          message: `我们使用PWA技术，无网络也能使用<br/>最近更新：${config.updateInfo}<br/><a target="_blank" href="https://github.com/fjqz177/unlock-music/wiki/使用提示">使用提示</a>`,
           dangerouslyUseHTMLString: true,
           duration: 10000,
           position: 'top-left',
